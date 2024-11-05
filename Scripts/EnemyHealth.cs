@@ -12,6 +12,7 @@ public class EnemyHealth : MonoBehaviour
         
         if(enemyLife <= 0)
         {
+            ScoreManager.ScoreManagerInstance.AddScore();
             Destroy(gameObject);
         }
     }
